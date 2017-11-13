@@ -1,27 +1,5 @@
-# README #
+Install Java and set JAVA_HOME 
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Download Gradle, extract to a folder and set GRADLE_HOME
 
-### What is this repository for? ###
-
-*This repo will hold all the APIs of Popcorn project (Spring boot)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+beans == DTO
