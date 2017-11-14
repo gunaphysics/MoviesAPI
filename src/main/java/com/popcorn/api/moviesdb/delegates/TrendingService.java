@@ -26,9 +26,6 @@ public class TrendingService {
         public List<Trend> getResults() {
             return results;
         }
-        public void setResults(List<Trend> results) {
-            this.results = results;
-        }
         List<Trend> results;
     }
 }
