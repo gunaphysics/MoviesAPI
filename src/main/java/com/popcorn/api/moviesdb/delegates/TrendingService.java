@@ -1,4 +1,4 @@
-package com.popcorn.api.moviesdb.logic;
+package com.popcorn.api.moviesdb.delegates;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

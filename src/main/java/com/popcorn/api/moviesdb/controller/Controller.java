@@ -1,7 +1,7 @@
 package com.popcorn.api.moviesdb.controller;
 
+import com.popcorn.api.moviesdb.delegates.TrendingServiceLogic;
 import com.popcorn.api.moviesdb.dto.Trend;
-import com.popcorn.api.moviesdb.logic.TrendingServiceLogic;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
