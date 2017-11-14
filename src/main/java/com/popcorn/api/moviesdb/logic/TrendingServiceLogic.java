@@ -3,8 +3,6 @@ package com.popcorn.api.moviesdb.logic;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.popcorn.api.moviesdb.dto.Trend;
-import com.popcorn.api.moviesdb.dto.TrendResponse;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
@@ -17,7 +15,20 @@ public class TrendingServiceLogic {
         String apiResponse = restTemplate.getForEntity(URI, String.class).getBody();
         //Reason for using gson : The json object mapper in RestTemplate is not as easy as gson.
         Gson gson = new GsonBuilder().create();
-        TrendResponse trendResponse = gson.fromJson(apiResponse, TrendResponse.class);
-        return trendResponse.getResults().subList(0,8);
+         TrendingResponse trendingResponse = gson.fromJson(apiResponse, TrendingResponse.class);
+        return trendingResponse.getResults().subList(0,8);
+    }
+
+    private class TrendingResponse {
+        public TrendingResponse(String page, String total_results, String total_pages, List<Trend> results) {
+            this.results = results;
+        }
+        public List<Trend> getResults() {
+            return results;
+        }
+        public void setResults(List<Trend> results) {
+            this.results = results;
+        }
+        List<Trend> results;
     }
 }
