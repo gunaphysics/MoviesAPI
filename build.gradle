@@ -16,10 +16,10 @@ apply plugin: 'org.springframework.boot'
 
 jar {
 	baseName = 'popcorn-api'
-	version = '1.0.2'
+	version = '1.0.3'
 }
 group = 'com.popcorn.api'
-version = '1.0.2'
+version = '1.0.3'
 sourceCompatibility = 1.8
 
 repositories {
